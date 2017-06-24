@@ -1,0 +1,13 @@
+language: elixir
+elixir:
+  - 1.4.1
+otp_release:
+  - 18.2.1
+services:
+  - postgresql
+cache:
+  directories:
+    - _build
+    - deps
+script:
+  - mix test
