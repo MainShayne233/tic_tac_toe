@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
+import TicTacToeBoard from './tic_tac_toe/Board'
 
 export default class App extends Component {
 
   render() {
     return (
       <div>
-        <h1>Phoenix and React, yay!</h1>
-        <p>Find me in ./assets/js/ui/app.jsx</p>
+        <TicTacToeBoard/>
       </div>
     )
   }
