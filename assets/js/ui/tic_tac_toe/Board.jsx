@@ -49,7 +49,7 @@ export default class TicTacToeBoard extends Component {
   board() { return this.refs.board }
   verticalColumns() { return this.columns('vertical') }
   horizontalColumns() { return this.columns('horizontal') }
-  
+
   columns(orientation) {
     return Object.keys(this.refs).filter(ref => {
       return ref.indexOf(orientation) === 0
@@ -155,15 +155,15 @@ export default class TicTacToeBoard extends Component {
       const uniqPlayers = uniq(cells)
       if (allDefined(cells) && uniqPlayers.length === 1) return uniqPlayers[0]
     }
-    return this.checkForDiagnolWinner(currentBoard)
+    return this.checkForDiagonalWinner(currentBoard)
   }
 
-  checkForDiagnolWinner(currentBoard) {
-    const diagnalWinArrangements = [
+  checkForDiagonalWinner(currentBoard) {
+    const diagonalWinArrangements = [
       [ [0, 0], [1, 1],  [2, 2] ],
       [ [2, 0], [1, 1],  [0, 2] ],
     ]
-    for (const arrangement of diagnalWinArrangements) {
+    for (const arrangement of diagonalWinArrangements) {
       const cells = arrangement.map(cell => currentBoard[ cell[0] ][ cell[1] ])
       const uniqPlayers = uniq(cells)
       if (allDefined(cells) && uniqPlayers.length === 1) return uniqPlayers[0]
