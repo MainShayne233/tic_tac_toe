@@ -1,3 +1,3 @@
-defmodule NewApp.Web.LayoutViewTest do
-  use NewApp.Web.ConnCase, async: true
+defmodule TicTacToe.Web.LayoutViewTest do
+  use TicTacToe.Web.ConnCase, async: true
 end

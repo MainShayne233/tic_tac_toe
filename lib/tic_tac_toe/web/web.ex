@@ -1,12 +1,12 @@
-defmodule NewApp.Web do
+defmodule TicTacToe.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use NewApp.Web, :controller
-      use NewApp.Web, :view
+      use TicTacToe.Web, :controller
+      use TicTacToe.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -18,17 +18,17 @@ defmodule NewApp.Web do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: NewApp.Web
+      use Phoenix.Controller, namespace: TicTacToe.Web
       import Plug.Conn
-      import NewApp.Web.Router.Helpers
-      import NewApp.Web.Gettext
+      import TicTacToe.Web.Router.Helpers
+      import TicTacToe.Web.Gettext
     end
   end
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/new_app/web/templates",
-                        namespace: NewApp.Web
+      use Phoenix.View, root: "lib/tic_tac_toe/web/templates",
+                        namespace: TicTacToe.Web
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_csrf_token: 0, get_flash: 2, view_module: 1]
@@ -36,9 +36,9 @@ defmodule NewApp.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import NewApp.Web.Router.Helpers
-      import NewApp.Web.ErrorHelpers
-      import NewApp.Web.Gettext
+      import TicTacToe.Web.Router.Helpers
+      import TicTacToe.Web.ErrorHelpers
+      import TicTacToe.Web.Gettext
     end
   end
 
@@ -53,7 +53,7 @@ defmodule NewApp.Web do
   def channel do
     quote do
       use Phoenix.Channel
-      import NewApp.Web.Gettext
+      import TicTacToe.Web.Gettext
     end
   end
 

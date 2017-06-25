@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :new_app, NewApp.Web.Endpoint,
+config :tic_tac_toe, TicTacToe.Web.Endpoint,
   http: [port: 4001],
   server: false
 

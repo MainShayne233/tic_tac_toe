@@ -1,3 +1,3 @@
-defmodule NewApp.Web.PageViewTest do
-  use NewApp.Web.ConnCase, async: true
+defmodule TicTacToe.Web.PageViewTest do
+  use TicTacToe.Web.ConnCase, async: true
 end

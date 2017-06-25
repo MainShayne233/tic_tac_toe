@@ -1,5 +1,5 @@
-defmodule NewApp.Web.ErrorView do
-  use NewApp.Web, :view
+defmodule TicTacToe.Web.ErrorView do
+  use TicTacToe.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

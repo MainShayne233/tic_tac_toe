@@ -1,4 +1,4 @@
-defmodule NewApp.Web.ErrorHelpers do
+defmodule TicTacToe.Web.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule NewApp.Web.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(NewApp.Web.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(TicTacToe.Web.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(NewApp.Web.Gettext, "errors", msg, opts)
+      Gettext.dgettext(TicTacToe.Web.Gettext, "errors", msg, opts)
     end
   end
 end

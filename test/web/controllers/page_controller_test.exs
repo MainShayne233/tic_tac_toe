@@ -1,8 +1,8 @@
-defmodule NewApp.Web.PageControllerTest do
-  use NewApp.Web.ConnCase
+defmodule TicTacToe.Web.PageControllerTest do
+  use TicTacToe.Web.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"
-    assert html_response(conn, 200) =~ "Hello NewApp!"
+    assert html_response(conn, 200) =~ "Hello TicTacToe!"
   end
 end

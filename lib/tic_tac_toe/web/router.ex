@@ -1,5 +1,5 @@
-defmodule NewApp.Web.Router do
-  use NewApp.Web, :router
+defmodule TicTacToe.Web.Router do
+  use TicTacToe.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule NewApp.Web.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", NewApp.Web do
+  scope "/", TicTacToe.Web do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", NewApp.Web do
+  # scope "/api", TicTacToe.Web do
   #   pipe_through :api
   # end
 end

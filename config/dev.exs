@@ -1,7 +1,7 @@
 use Mix.Config
 
-config :new_app, NewApp.Web.Endpoint,
-  http: [port: 4000],
+config :tic_tac_toe, TicTacToe.Web.Endpoint,
+  http: [port: 3000],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -12,12 +12,12 @@ config :new_app, NewApp.Web.Endpoint,
      ]
    ]
 
-config :new_app, NewApp.Web.Endpoint,
+config :tic_tac_toe, TicTacToe.Web.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/gettext/.*(po)$},
-      ~r{lib/new_app/web/views/.*(ex)$},
-      ~r{lib/new_app/web/templates/.*(eex)$}
+      ~r{lib/tic_tac_toe/web/views/.*(ex)$},
+      ~r{lib/tic_tac_toe/web/templates/.*(eex)$}
     ]
   ]
 

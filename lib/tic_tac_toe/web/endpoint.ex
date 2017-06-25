@@ -1,14 +1,14 @@
-defmodule NewApp.Web.Endpoint do
-  use Phoenix.Endpoint, otp_app: :new_app
+defmodule TicTacToe.Web.Endpoint do
+  use Phoenix.Endpoint, otp_app: :tic_tac_toe
 
-  socket "/socket", NewApp.Web.UserSocket
+  socket "/socket", TicTacToe.Web.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :new_app, gzip: false,
+    at: "/", from: :tic_tac_toe, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -35,10 +35,10 @@ defmodule NewApp.Web.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_new_app_key",
+    key: "_tic_tac_toe_key",
     signing_salt: "X4uG0wwI"
 
-  plug NewApp.Web.Router
+  plug TicTacToe.Web.Router
 
   @doc """
   Dynamically loads configuration from the system environment
