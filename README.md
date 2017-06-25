@@ -6,6 +6,7 @@
 mix deps.get
 cd assets
 npm i
+cd ..
 
 iex -S mix phoenix.server
 ``` 
