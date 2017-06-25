@@ -19,7 +19,7 @@
 
 
 
-    <%= if Mix.env in [:test] do %>
+    <%= if Mix.env in [:dev, :test] do %>
       <!-- This will load assets from the webpack dev server when running in dev/test mode -->
       <script src='http://localhost:4002/app.bundle.js'></script>
     <% else %>

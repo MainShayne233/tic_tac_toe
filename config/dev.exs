@@ -1,7 +1,7 @@
 use Mix.Config
 
 config :tic_tac_toe, TicTacToe.Web.Endpoint,
-  http: [port: 3000],
+  http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
