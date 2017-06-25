@@ -25,6 +25,7 @@
     "write-file-webpack-plugin": "^4.0.2"
   },
   "dependencies": {
+    "cremma": "0.0.7",
     "react": "^15.5.3",
     "react-dom": "^15.5.3"
   }
